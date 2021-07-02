@@ -1,0 +1,420 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+
+/* baner */
+.baner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #3475ca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.baner img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.25;
+}
+.baner .content{
+    position: relative;
+    max-width: 750px;
+    text-align: center;
+}
+.baner .content h2{
+    color: #fff;
+    font-size:60px;
+}
+.baner .content p{
+    color: #fff;
+    font-size:16px;
+}
+.baner header{
+    position:absolute;
+    left: 0;
+    top: 0;
+    padding:40px 100px;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9;
+}
+.baner header .logo{
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1;
+}
+.baner header .toggle{
+    position: relative;
+    width: 36px;
+    height: 28px;
+    background:url(../img/toggle.png);
+    background-size:cover;
+    cursor: pointer;
+    color: #fff;
+    z-index: 9999;
+}
+
+/* About */
+.about{
+    position: relative;
+    width: 100%;
+    display:flex;
+}
+.about .contentBx{
+    background:#162c3d;
+    padding:100px;
+    width: 50%;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about .contentBx .heading{
+    padding-bottom: 30px;
+    color: #fff;
+}
+.about .contentBx .text{
+    color: #fff;
+}
+.about .imgBx{
+    background:url(../img/window.jpg);
+    width:50%;
+    background-size: cover;
+    background-position: cover;
+}
+
+/* Services */
+.services{
+    background: #12222d;
+    padding: 100px;
+    text-align: center;
+}
+.services .heading{
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing:1;
+}
+.services .container{
+    width: 100% ;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+.services .container .serviceeBx{
+    position: relative;
+    display: flex;
+    background: #fff;
+    width: 350px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.text{
+    color: #fff;
+}
+.services .container .serviceeBx img{
+    max-width: 100px;
+}
+
+/* Tenolory */
+.tenolory{
+    background:#3f8Fcc;
+    width: 100%;
+    padding:100px;
+    padding-top: 300px;
+    margin-top: -300px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h2{
+    color:#fff;
+}
+.tenolory .contentBx{
+    max-width:800px;
+}
+.tenolory .imgbx{
+    max-width:250px;
+}
+.tenolory .imgbx img{
+    max-width:100%;
+}
+
+/* Client */
+.client{
+    background:#162c3d;
+    padding:100px;
+    text-align:center;
+}
+.client .imgBx{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top:40px
+}
+.client .imgBx img{
+    max-width:200px;
+    margin: 20px;
+    opacity: 0.25;
+    cursor: pointer;
+}
+.client .imgBx img:hover{
+    opacity: 1;
+}
+.testimonials{
+    position: relative;
+    background:#12222d;
+    padding:100px;
+    text-align:center;
+}
+.testimonials .container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:40px;
+    flex-wrap: wrap;
+}
+.testimonials .container .contentBx{
+    background:#fff;
+    padding: 60px 50px;
+    width:550px;
+    display:flex;justify-content:center;
+    align-items: center;
+    text-align: left;
+}
+.testimonials .container .contentBx p{
+    font-style: italic;
+}
+.testimonials .container .contentBx h3{
+    width:100%;
+    text-align:end;   
+    font-weight: 700;
+    color: rgb(72, 47, 184);
+}
+.contact{
+    padding: 100px;
+    background:#162c3b;
+
+}
+.imgBx2{
+    background:url(../img/bg2.jpg);
+    background-size: cover;
+    background-position:center;
+    width:50%;
+}
+.redbg{
+    background:url(../img/red.jpg) !important;
+    background-size: cover;
+    background-position:center;
+}
+.form .inputBx{
+    margin-bottom: 40px;
+}   
+.form .inputBx input{
+    width: 100% ;
+    background:transparent;
+    box-shadow: none;
+    border:none;
+    outline: none;
+    padding: 10px 0;
+    font-size:18px;
+    font-weight:300;
+    color: #fff;
+    border-bottom:  2px solid #fff; 
+}
+.form .inputBx input::placeholder{
+    color: #fff;
+}
+.form .inputBx textarea{
+    width: 100% ;
+    background:transparent;
+    box-shadow: none;
+    border:none;
+    outline: none;
+    padding: 10px 0;
+    font-size:18px;
+    font-weight:300;
+    color: #fff;
+    border-bottom:  2px solid #fff; 
+}
+.form .inputBx textarea::placeholder{
+    color: #fff;
+}
+.form .inputBx input[type="submit"]{
+    width:150px;
+    background:#fff;
+    color:black;
+    cursor: pointer;
+}
+
+/* footer */
+.footer{
+    background:#162c3d;
+    padding:20px 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer ul li{
+    list-style: none;
+}
+.footer ul li a{
+    text-decoration: none;
+    display:inline-block;
+    margin: 0 10px;
+}
+.footer ul li a img{
+    filter: invert(1);
+    max-width: 20px;
+}
+
+/* mobile SmartPhone */
+@media screen and (max-width: 767px) {
+    .baner .content h2{
+        margin-bottom: 20px;
+    }
+    .baner .logo{
+        margin-left: 20px;;
+    }
+    .baner .content p{
+        line-height:25px;
+        font-size:20px;
+        padding: 0 50px;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about .contentBx
+    {
+        width: 100%;
+        padding: 50px;
+        min-height: 400px;
+        text-align: center;
+    }
+    .about .imgBx{
+        width: 100%;
+        padding: 50px;
+        min-height: 350px;
+        text-align: center;
+        object-fit: cover;
+        background-size: 100%;
+    }
+    .services{
+        padding:20px;
+    }
+    .services .container{
+        justify-content: center;
+        margin: 20px 0 0 0;
+    }
+    .services .container .serviceeBx{
+        margin: 20px;
+        width: 300px;
+        height: 350px;
+    }
+    .tenolory{
+        flex-direction: column;
+    }
+    .tenolory .contentBx{
+        margin-bottom: 40px;
+    }
+    .client h2{
+        margin-bottom: 20px;
+    }
+    .client p{
+        color: #fff;
+    }
+    .client .imgBx{
+        flex-direction: column;
+        align-items: center;
+    }
+    .client .imgBx img{
+        width: 100%;
+        align-items: center;
+        margin-left: 10px;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footer .text{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer ul{
+        margin-top: 30px;
+        width: 100%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width:1023px){
+    .baner .content h2{
+        margin-bottom: 20px;
+    }
+    .baner .content p{
+        line-height:25px;
+        font-size:20px;
+        padding: 0 50px;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about .contentBx
+    {
+        width: 100%;
+        padding: 50px;
+        min-height: 400px;
+        text-align: center;
+    }
+    .about .imgBx{
+        width: 100%;
+        padding: 50px;
+        min-height: 700px;
+        text-align: center;
+     
+    }
+    .services{
+        padding:20px;
+    }
+    .services .container{
+        justify-content: center;
+        margin: 20px 0 0 0;
+    }
+    .services .container .serviceeBx{
+        margin: 20px;
+        width: 300px;
+        height: 350px;
+    }
+    
+}
+
+/* PC */
+@media screen and (min-width:1024px){
+
+}
